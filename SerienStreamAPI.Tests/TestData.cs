@@ -60,7 +60,7 @@ public static class TestData
     public static readonly string RedirectId = "2531389";
 
 
-    public static readonly string VoeVideoUrl = "https://aniworld.to/redirect/2275401";
+    public static readonly string VoeVideoUrl = "https://jilliandescribecompany.com/e/gqkpodlzndc6";
 
     public static readonly string StreamtapeVideoUrl = "https://streamtape.com/v/wzP4qXZRvrIe21";
 
@@ -69,7 +69,7 @@ public static class TestData
     public static readonly string VidozaVideoUrl = "https://videzz.net/embed-rymjwbo2btf8.html";
 
 
-    public static readonly string StreamUrl = "https://delivery-node-q3y2c0zkvnd4gnun.voe-network.net/engine/hls2-c/01/11779/ofaw2awtwixx_,n,.urlset/master.m3u8?t=-c4gLZxCvEiVvx7Fgk1SSz9RAgBpsb2Klc5ID0-CfDk&s=1725048286&e=14400&f=58897448&node=delivery-node-tyrpwrfsotxcpbf4.voe-network.net&i=37.201&sp=2500&asn=3209";
+    public static readonly string StreamUrl = "https://cdn-ffkzlaf13ugpfjz3.orbitcache.com/engine/hls2-c/01/08089/m2es8iflfxe9_,n,.urlset/master.m3u8?t=kpz5QR67twx8dBXm3X_12R6KR2_lwjOK08owvwFslwU&s=1751628335&e=14400&f=50083089&node=UOx5276IumOH4BADikx4rlHC+ibdAWZ+mo07sx3WfaU=&i=37.201&sp=2500&asn=3209&q=n&rq=lM9W5yDSaLQNRz61NuQiPiMEcqBJWFSEtN9X070b";
 
     public static readonly string FilePath = @$"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\test.mp4";
 

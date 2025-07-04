@@ -14,10 +14,10 @@ internal static class Extensions
         $"{baseUrl.Trim('/')}/{relativePath.Trim('/')}";
 
 
-    static readonly HashSet<char> replacements = new()
-    {
+    static readonly HashSet<char> replacements =
+    [
         ':', ',' , '(', ')', '~', '.', '&', '\'', '+', '!', 'ü', 'ä', 'ö',
-    };
+    ];
 
     public static string ToRelativePath(
         this string text)
@@ -184,5 +184,56 @@ internal static class Extensions
         }
 
         return result;
+    }
+
+
+    public static string ShiftLetters(
+        this string input)
+    {
+        StringBuilder sb = new(input.Length);
+
+        foreach (char c in input)
+        {
+            if (c >= 'A' && c <= 'Z')
+                sb.Append((char)((c - 'A' + 13) % 26 + 'A'));
+            else if (c >= 'a' && c <= 'z')
+                sb.Append((char)((c - 'a' + 13) % 26 + 'a'));
+            else
+                sb.Append(c);
+        }
+
+        return sb.ToString();
+    }
+
+    static readonly string[] junkParts = ["@$", "^^", "~@", "%?", "*~", "!!", "#&"];
+
+    public static string ReplaceJunk(
+        this string input)
+    {
+        foreach (string junk in junkParts)
+            input = input.Replace(junk, "_");
+
+        return input;
+    }
+
+    public static string ShiftBack(
+        this string input,
+        int shift)
+    {
+        StringBuilder sb = new(input.Length);
+
+        foreach (char c in input)
+            sb.Append((char)(c - shift));
+
+        return sb.ToString();
+    }
+
+    public static string ReverseString(
+        this string s)
+    {
+        char[] arr = s.ToCharArray();
+
+        Array.Reverse(arr);
+        return new(arr);
     }
 }
