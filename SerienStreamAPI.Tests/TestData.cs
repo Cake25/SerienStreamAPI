@@ -62,18 +62,18 @@ public static class TestData
 
     public static readonly string VoeVideoUrl = "https://jilliandescribecompany.com/e/gqkpodlzndc6";
 
-    public static readonly string StreamtapeVideoUrl = "https://streamtape.com/v/wzP4qXZRvrIe21";
+    public static readonly string StreamtapeVideoUrl = "https://streamtape.com/v/lARoV4B6vps7kbg/unknown_replay_2025.05.29-11.32.mp4";
 
-    public static readonly string DoodstreamVideoUrl = "https://dood.li/e/dp1qdu1v6w1r";
+    public static readonly string DoodstreamVideoUrl = "https://vide0.net/e/whjxr0pbrqj1";
 
-    public static readonly string VidozaVideoUrl = "https://videzz.net/embed-rymjwbo2btf8.html";
+    public static readonly string VidozaVideoUrl = "https://186.2.175.5/redirect/17839891";
 
 
-    public static readonly string StreamUrl = "https://cdn-ffkzlaf13ugpfjz3.orbitcache.com/engine/hls2-c/01/08089/m2es8iflfxe9_,n,.urlset/master.m3u8?t=kpz5QR67twx8dBXm3X_12R6KR2_lwjOK08owvwFslwU&s=1751628335&e=14400&f=50083089&node=UOx5276IumOH4BADikx4rlHC+ibdAWZ+mo07sx3WfaU=&i=37.201&sp=2500&asn=3209&q=n&rq=lM9W5yDSaLQNRz61NuQiPiMEcqBJWFSEtN9X070b";
+    public static readonly string StreamUrl = "https://dk543xi.cloudatacdn.com/u5kj6fyftdblsdgge6v4oii6ijflfjhlbpogpdiws3dxy7ierpsotjjh7zvq/8z38fy1vou~6nVCoTP03T?token=210791274-37-201-1751629562-312c9a6b1a19d6495fc08e659de749f6/mwom8zu9w6doto0gldcj2jxq&expiry=1751629592907";
 
     public static readonly string FilePath = @$"{Environment.GetFolderPath(Environment.SpecialFolder.Desktop)}\test.mp4";
 
-    public static readonly (string key, string value)[]? Headers = null; //[("Referer", DoodstreamVideoUrl)]; // Header requirered when downloading stream from doodstream
+    public static readonly (string key, string value)[]? Headers = [("Referer", DoodstreamVideoUrl)]; //[("Referer", DoodstreamVideoUrl)]; // Header requirered when downloading stream from doodstream
 
 
     public static readonly string DownloadDirectory = Environment.GetFolderPath(Environment.SpecialFolder.Desktop);
