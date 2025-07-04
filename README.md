@@ -37,7 +37,7 @@ VideoDetails episodeVideoDetails = await client.GetEpisodeVideoInfoAsync("My Dre
 foreach (VideoStream videoStream in episodeVideoDetails.Streams)
    Console.WriteLine("Video Stream [{videoUrl]: {hoster}-{audioLanguage}-{subtitleLanguage}", videoStream.VideoUrl, videoStream.Hoster, videoStream.Language.Audio, videoStream.Language.Subtitle);
 
-VideoDetails movieVideoDetails = await client.GetEpisodeVideoInfoAsync("My Dress-Up Darling", 1, 1);
+VideoDetails movieVideoDetails = await client.GetMovieVideoInfoAsync("My Dress-Up Darling", 1);
 foreach (VideoStream videoStream in movieVideoDetails.Streams)
    Console.WriteLine("Video Stream [{videoUrl]: {hoster}-{audioLanguage}-{subtitleLanguage}", videoStream.VideoUrl, videoStream.Hoster, videoStream.Language.Audio, videoStream.Language.Subtitle);
 ```
