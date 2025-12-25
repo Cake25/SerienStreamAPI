@@ -80,8 +80,6 @@ The repository contains a cross-platform Terminal.Gui browser for quickly explor
 dotnet run --project SerienStreamAPI.Gui
 ```
 
-For a one-command startup on Windows, run `run-gui.bat` from the repository root (double-click it in Explorer or launch from a terminal window). It switches the console to UTF-8 and invokes the GUI project via the .NET SDK.
-
 The app defaults to SerienStream ("Serie") and the `https://s.to/` host. You can switch to AniWorld ("Anime"), override the host URL, and toggle certificate validation if Windows flags the site certificate. All navigation is keyboard driven: enter a title, press **Search**, pick a season/movie, then choose an episode to see available streams.
 
 To distribute a Windows-friendly executable, publish it as a single file:
