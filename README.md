@@ -72,5 +72,27 @@ If you have any questions about this library or questions on how to use it. Plea
 
 ---
 
+## Running the terminal GUI
+
+The repository contains a cross-platform Terminal.Gui browser for quickly exploring SerienStream/AniWorld streams. On Windows, run it from a terminal window with the .NET 8 SDK installed:
+
+```
+dotnet run --project SerienStreamAPI.Gui
+```
+
+For a one-command startup on Windows, run `run-gui.bat` from the repository root (double-click it in Explorer or launch from a terminal window). It switches the console to UTF-8 and invokes the GUI project via the .NET SDK.
+
+The app defaults to SerienStream ("Serie") and the `https://s.to/` host. You can switch to AniWorld ("Anime"), override the host URL, and toggle certificate validation if Windows flags the site certificate. All navigation is keyboard driven: enter a title, press **Search**, pick a season/movie, then choose an episode to see available streams.
+
+To distribute a Windows-friendly executable, publish it as a single file:
+
+```
+dotnet publish SerienStreamAPI.Gui -c Release -r win-x64 -p:PublishSingleFile=true --self-contained false
+```
+
+The executable will be placed under `SerienStreamAPI.Gui/bin/Release/net8.0/win-x64/publish/` and can be launched directly.
+
+---
+
 ## Legal Notice
 This library is for educational purposes only. Downloading or accessing copyrighted content without permission may be illegal in your country. I am not responsible for any misuse or legal consequences. **Use at your own risk**.
